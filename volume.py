@@ -19,7 +19,6 @@ reader.Update()
 
 #Colors
 colorTransferFunction = vtk.vtkColorTransferFunction()
-colorTransferFunction.SetColorSpaceToRGB()  #Useless?
 colorTransferFunction.AddRGBPoint(0.0, 0.0, 0.0, 0.0)   #First point, all black
 colorTransferFunction.AddRGBPoint(86.0, 1.0, 0.0, 0.0)  #One third points, all red
 colorTransferFunction.AddRGBPoint(172.0, 0.0, 1.0, 0.0) #Two thirds points, all green
@@ -40,7 +39,6 @@ volumeProperty = vtk.vtkVolumeProperty()
 volumeProperty.SetColor(colorTransferFunction)
 volumeProperty.SetScalarOpacity(opacityTransferFunction)
 volumeProperty.ShadeOn()
-
 
 #Volume mapper
 volumeMapper = vtk.vtkGPUVolumeRayCastMapper()
