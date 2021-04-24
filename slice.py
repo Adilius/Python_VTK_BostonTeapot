@@ -152,7 +152,7 @@ def ButtonCallback(obj, event):
             print("Sagittal view")
             txtview.SetInput("Current view:" + "Sagittal view")
             txtviewprop = txtview.GetTextProperty()
-            
+
         if currentOrientation == 4:
             reslice.SetResliceAxes(oblique)
             print("Oblique view")
@@ -179,7 +179,6 @@ def MouseMoveCallback(obj, event):
         matrix.SetElement(2, 3, center[2])
 
         #Update text
-        print(mouseY)
         txtpos.SetInput("Current Y:" + str(mouseY))
         txtposprop = txtpos.GetTextProperty()
 
