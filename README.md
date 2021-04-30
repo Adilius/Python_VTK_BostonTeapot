@@ -1,4 +1,4 @@
-# The Visualization Toolkit in Python rendering the Boston Teapot
+# The Visualization Toolkit rendering the Boston Teapot
 This project render [the boston teapot](https://www.sjbaker.org/wiki/index.php?title=The_History_of_The_Teapot) using [The Visualization Toolkit](https://vtk.org/) in different ways to visualize the attributes of the dataset. 
 * [Technologies](#technologies)
 * [Setup](#setup)
@@ -29,7 +29,7 @@ Activate the virtual enviroment: `venv\Scripts\activate.ps1`
 
 Then install dependencies again: `pip install -r requirements.txt`
 
-Exit virtual enviroment using: `deactivate`
+When done running examples code, exit the virtual enviroment using: `deactivate`
 
 ## Examples
 
